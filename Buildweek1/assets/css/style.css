@@ -1,0 +1,75 @@
+body {
+  background-image: url("/assets/img/bg.jpg"); /* Imposta il percorso del tuo file immagine */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white; /* Cambia il colore del testo se necessario */
+  position: relative;
+}
+h1 {
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white; /* Cambia il colore del testo se necessario */
+  position: relative;
+}
+
+/* Stili per il logo */
+#logo {
+  position: absolute;
+  top: 50px; /* Modifica il valore per regolare la distanza dal top */
+  left: 108px; /* Modifica il valore per regolare la distanza dal lato sinistro */
+  width: 190px; /* Larghezza desiderata del logo */
+  height: auto; /* L'altezza si adatta automaticamente alla larghezza mantenendo le proporzioni */
+}
+
+/* Aggiungi stili CSS aggiuntivi qui se necessario */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  border: 2px solid black; /* Bordo di 2px nero */
+  position: absolute;
+  top: 130px; /* Modifica il valore per regolare la distanza dal top */
+  left: 35px; /* Modifica il valore per regolare la distanza dal lato sinistro */
+  width: auto; /* Larghezza desiderata del logo */
+  height: auto;
+  text-align: center; /* Centra l'h1 */
+  margin-bottom: 10px; /* Aggiunge spazio inferiore */
+}
+
+.bottone {
+  cursor: pointer;
+}
+
+.container input {
+  display: none;
+}
+
+.container svg {
+  overflow: visible;
+}
+
+.path {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.container input:checked ~ svg .path {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}
